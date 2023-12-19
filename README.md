@@ -152,10 +152,10 @@
 <h2 id="augmentation"> Augmentation</h2>
 
 <p align="justify"> 
-  Detection 모델의 성능 증대를 위한 2차 학습을 위해 Data augmentation을 진행했다. Augmentation은 성능 향상에 도움이 될 수 있을만한 2가지 방법을 사용했다.
+  Detection 모델의 성능 증대를 위한 2차 학습을 위해 Data augmentation을 진행했습니다. Augmentation은 성능 향상에 도움이 될 수 있을만한 2가지 방법을 사용했습니다.
   <ol>
-    <li>180도 Rotation  - Raw data를 180도 회전시켜 Augmentation을 진행했다. 이 방식을 통해 데이터를 증강하여 명함을 뒤집어 잡고 인식시키는 경우에 대한 Detection을 방지하였다.</li> 
-    <li>명도, 채도, 밝기 조정 - Raw data의 명도, 채도, 밝기를 랜덤하게 조정하여 Augmentation을 진행했다. 이 방식을 통해 다양한 밝기의 환경, 촬영 과정에서의 빛번짐 등 Detection 과정에서 다양한 시각적 noise를 방지하였다.</li>
+    <li>180도 Rotation  - Raw data를 180도 회전시켜 Augmentation을 진행했습니다. 이 방식을 통해 데이터를 증강하여 명함을 뒤집어 잡고 인식시키는 경우에 대한 Detection을 방지하였습니다.</li> 
+    <li>명도, 채도, 밝기 조정 - Raw data의 명도, 채도, 밝기를 랜덤하게 조정하여 Augmentation을 진행했습니다. 이 방식을 통해 다양한 밝기의 환경, 촬영 과정에서의 빛번짐 등 Detection 과정에서 다양한 시각적 noise를 방지하였습니다.</li>
   </ol>
   
 
