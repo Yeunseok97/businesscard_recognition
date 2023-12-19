@@ -16,6 +16,7 @@
     <li><a href="#dataset"> ➤ Dataset</a></li>
     <li><a href="#pipeline"> ➤ Pipeline</a></li>
     <li><a href="#augmentation"> ➤ Augmentation</a></li>
+    <li><a href="#result"> ➤ Result</a></li>
   </ol>
 </details>
 
