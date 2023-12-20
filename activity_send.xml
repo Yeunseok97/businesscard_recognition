@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 첫 번째 LinearLayout (화면 상단 부분) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- ImageView -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitCenter" />
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 서버 상태 텍스트 뷰 -->
+        <TextView
+            android:id="@+id/ServerStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서버 상태"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/textViewBackgroundColor"
+            android:textColor="@color/textColorWhite" />
+
+        <!-- Client Log -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- 두 번째 LinearLayout (화면 하단 부분) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 클라이언트 상태 텍스트 뷰 -->
+        <TextView
+            android:id="@+id/clientStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="클라이언트 상태"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/textViewBackgroundColor"
+            android:textColor="@color/textColorWhite" />
+
+        <!-- Server Log -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </ScrollView>
+
+        <!-- 전송 버튼 및 다음 버튼이 들어갈 LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <!-- 전송 버튼 -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="360px"
+                android:layout_weight="1"
+                android:text="전송"
+                android:textSize="40sp" />
+
+            <!-- 다음 버튼 -->
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="0dp"
+                android:layout_height="360px"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:text="다음"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
